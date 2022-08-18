@@ -17,5 +17,8 @@ module.exports = {
       "project": "./tsconfig.json" // TypeScriptのLint時に参照するconfigファイルを指定
     },
     root: true, // 上位ディレクトリにある他のeslintrcを参照しないようにする
-    rules: {}
+    rules: {
+      "@typescript-eslint/no-var-requires": "off"
+    },
+    ignorePatterns: ['.eslintrc.*'],
   }
